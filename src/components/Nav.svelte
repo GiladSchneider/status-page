@@ -9,7 +9,7 @@
       <div>
         <a href={config["status-website"].logoHref || config.path} class="logo">
           {#if config["status-website"] && !config["status-website"].hideNavLogo}
-            <img alt="" src={config["status-website"].logoUrl} />
+            <img alt="{config["status-website"].logoAlt || config["status-website"].name} " src={config["status-website"].logoUrl} />
           {/if}
           {#if config["status-website"] && !config["status-website"].hideNavTitle}
             <div>{config["status-website"].name}</div>
